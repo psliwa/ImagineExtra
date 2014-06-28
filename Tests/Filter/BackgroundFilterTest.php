@@ -26,7 +26,7 @@ class BackgroundFilterTest extends AbstractTestCase
             'size' => array($width, $height),
         ));
 
-        $image = $this->imagine->open(__DIR__.'/../Resources/100x80-black.png');
+        $image = $this->create100x80BlackImage();
 
         //when
 

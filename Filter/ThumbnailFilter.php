@@ -43,7 +43,7 @@ class ThumbnailFilter extends AbstractFilter
             ->setRequired(array('mode', 'filter', 'size'))
             ->setAllowedTypes(array(
                 'size'=> 'array',
-                'allow_upscale' => 'boolean',
+                'allow_upscale' => 'bool',
             ))
             ->setNormalizers(array(
                 'size' => Validators::numberPair('size'),
@@ -63,7 +63,6 @@ class ThumbnailFilter extends AbstractFilter
         $size = $image->getSize();
         $origWidth = $size->getWidth();
         $origHeight = $size->getHeight();
-
 
         if (null === $width || null === $height) {
             if (null === $height) {

@@ -21,7 +21,7 @@ class WatermarkFilterTest extends AbstractTestCase
             'image' => '10x10-white.png',
         ));
 
-        $image = $this->imagine->open(__DIR__.'/../Resources/100x80-black.png');
+        $image = $this->create100x80BlackImage();
 
         //when
 
@@ -95,7 +95,7 @@ class WatermarkFilterTest extends AbstractTestCase
             'size' => $size,
         ));
 
-        $image = $this->imagine->open(__DIR__.'/../Resources/100x80-black.png');
+        $image = $this->create100x80BlackImage();
 
         //when
 
