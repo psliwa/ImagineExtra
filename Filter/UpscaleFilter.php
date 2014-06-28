@@ -19,7 +19,6 @@ class UpscaleFilter extends AbstractFilter
     {
         $resolver
             ->setDefaults(array(
-                'min' => null,
             ))
             ->setAllowedTypes(array(
                 'min' => 'array',
