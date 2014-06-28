@@ -1,0 +1,19 @@
+{
+    "name": "ps/imagine-extra",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Piotr Śliwa",
+            "email": "peter.pl7@gmail.com"
+        }
+    ],
+    "require": {
+        "imagine/imagine": ">=0.6.0,<0.7.0",
+        "symfony/options-resolver": ">=2.1.0,<3.0.0"
+    },
+    "autoload": {
+        "psr-0": { "ImagineExtra\\": "src/" }
+    },
+    "target-dir": "ImagineExtra",
+    "minimum-stability": "stable"
+}
