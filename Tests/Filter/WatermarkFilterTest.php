@@ -4,21 +4,10 @@
 namespace ImagineExtra\Tests\Filter;
 
 use ImagineExtra\Filter\WatermarkFilter;
-use Imagine\Gd\Imagine;
 use Imagine\Image\Point;
 
-class WatermarkFilterTest extends \PHPUnit_Framework_TestCase
+class WatermarkFilterTest extends AbstractTestCase
 {
-    /**
-     * @var Imagine
-     */
-    private $imagine;
-
-    protected function setUp()
-    {
-        $this->imagine = new Imagine();
-    }
-
     /**
      * @test
      * @dataProvider watermarkPositionProvider

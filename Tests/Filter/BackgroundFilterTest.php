@@ -5,22 +5,11 @@ namespace ImagineExtra\Tests\Filter;
 
 
 use ImagineExtra\Filter\BackgroundFilter;
-use Imagine\Gd\Imagine;
 use Imagine\Image\Box;
 use Imagine\Image\Point;
 
-class BackgroundFilterTest extends \PHPUnit_Framework_TestCase
+class BackgroundFilterTest extends AbstractTestCase
 {
-    /**
-     * @var Imagine
-     */
-    private $imagine;
-
-    protected function setUp()
-    {
-        $this->imagine = new Imagine();
-    }
-
     /**
      * @test
      */
